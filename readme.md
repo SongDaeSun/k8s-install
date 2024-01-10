@@ -70,6 +70,13 @@ sudo systemctl start containerd
 ```
 
 
+## docker sudo 없이 실행
+```
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo service docker restart
+```
+
 # Kubernetes 설치
 ## 방화벽 off
 ```
